@@ -30,6 +30,7 @@
   display: flex;
   align-items: center;
   margin-bottom: 20px;
+  cursor: pointer;
 }
 
 .sidebar_icon {
@@ -59,6 +60,7 @@
   display: flex;
   align-items: center;
   margin-bottom: 10px;
+  cursor: pointer;
 }
 
 .sidebar_friend_img {
