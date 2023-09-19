@@ -1,0 +1,41 @@
+.profile {
+  display: flex;
+}
+
+.profile_right {
+  flex: 9;
+}
+
+.profile_cover_img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 5px;
+  position: relative;
+}
+
+.profile_user_img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid rgb(0, 0, 0);
+  position: absolute;
+  top: 100px;
+  left: 400px;
+}
+
+.profile_username {
+  margin-left: 15rem;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+}
+
+.profile_info_text {
+  margin-left: 15rem;
+}
+
+.profile_right_bottom {
+  display: flex;
+}

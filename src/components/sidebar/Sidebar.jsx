@@ -11,7 +11,7 @@ import {
   Event,
   School,
 } from "@mui/icons-material";
-import Atiqur_Friend from "../../assets/person/person3.jpg";
+import { Users } from "../../dummydata";
 
 const Sidebar = () => {
   return (
@@ -58,30 +58,18 @@ const Sidebar = () => {
         <button className="show_button">Show More</button>
         <hr className="sidebar_hr" />
         <ul className="sidebar_friend_list">
-          <li className="sidebar_friend">
-            <img src={Atiqur_Friend} alt="" className="sidebar_friend_img" />
-            <span className="sidebar_friend_name">Atiqur Rahman</span>
-          </li>
-          <li className="sidebar_friend">
-            <img src={Atiqur_Friend} alt="" className="sidebar_friend_img" />
-            <span className="sidebar_friend_name">Abu Obaida</span>
-          </li>
-          <li className="sidebar_friend">
-            <img src={Atiqur_Friend} alt="" className="sidebar_friend_img" />
-            <span className="sidebar_friend_name">Shawpon Sen</span>
-          </li>
-          <li className="sidebar_friend">
-            <img src={Atiqur_Friend} alt="" className="sidebar_friend_img" />
-            <span className="sidebar_friend_name">Ashraful Islam</span>
-          </li>
-          <li className="sidebar_friend">
-            <img src={Atiqur_Friend} alt="" className="sidebar_friend_img" />
-            <span className="sidebar_friend_name">Akash Adikary</span>
-          </li>
-          <li className="sidebar_friend">
-            <img src={Atiqur_Friend} alt="" className="sidebar_friend_img" />
-            <span className="sidebar_friend_name">Emon Ahmed</span>
-          </li>
+          {Users.map((user) => {
+            return (
+              <li key={user.id} className="sidebar_friend">
+                <img
+                  src={user.profilePicture}
+                  alt=""
+                  className="sidebar_friend_img"
+                />
+                <span className="sidebar_friend_name">{user.username}</span>
+              </li>
+            );
+          })}
         </ul>
       </div>
     </div>
