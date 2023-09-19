@@ -72,7 +72,7 @@ const Rightbar = ({ profile }) => {
   return (
     <div className="rightbar">
       <div className="rightbar_wrapper">
-        <ProfileBar />
+        {profile ? <ProfileBar /> : <HomeBar />}
       </div>
     </div>
   );
