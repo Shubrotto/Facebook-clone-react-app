@@ -11,6 +11,7 @@ const Post = ({ post }) => {
   const { desc, photo, like, date, comment } = post;
   const [likeCount, setLikeCount] = useState(like);
   const [isliked, setIsLiked] = useState(false);
+  const PF = process.env.REACT_APP_PUBLIC_FOLDER;
 
   const likeHandler = () => {
     setLikeCount(isliked ? likeCount - 1 : likeCount + 1);

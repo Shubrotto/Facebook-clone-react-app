@@ -2,12 +2,15 @@ import React from "react";
 import "./topbar.css";
 import { Search, Person, Chat, Notifications } from "@mui/icons-material";
 import Profile from "../assets/person/Profilepic.jpg";
+import { Link } from "react-router-dom";
 
 const Topbar = () => {
   return (
     <div className="topbar_cotainer">
       <div className="topbar_left">
-        <span className="logo">Facebook</span>
+        <Link to="/" style={{ textDecoration: "none" }}>
+          <span className="logo">Facebook</span>
+        </Link>
       </div>
       <div className="topbar_center">
         <div className="searchbar">
